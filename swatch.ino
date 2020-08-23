@@ -39,6 +39,9 @@ void setup() {
 	tft->fillRect(0, 0, 210, 130, TFT_BLACK);
 	tft->setCursor(0, 0);
 	
+	/* rtc auto update */
+	rtc->check();
+	
 	/* Finaly Show Somthing PLZ? */
 	tft->print("Welcome to swatch. \n \nThe Simple Yet Efficient Opensource SmartWatch Software!\n");
 	delay(1000);
